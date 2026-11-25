@@ -182,7 +182,7 @@
       <h1>XMAS 2027 App Privacy Policy</h1>
       <dl class="meta">
         <div><dt>Effective</dt><dd>25 November 2026</dd></div>
-        <div><dt>Policy version</dt><dd>1.0</dd></div>
+        <div><dt>Policy version</dt><dd>1.1</dd></div>
         <div><dt>Applies to</dt><dd>iOS, Android and HarmonyOS 1.1.3+</dd></div>
       </dl>
     </header>
@@ -211,7 +211,7 @@
         <h2>2. Summary</h2>
         <div class="summary">
           <strong>No account. No advertising or analytics. No transmission of personal app data to the publisher.</strong>
-          The program, maps, announcements, and official report links are bundled with the application. Personal schedule and preference data stay on the device. External links open only after the user selects them.
+          The program, presentation details, maps, and announcements are bundled with the application. Personal schedule and preference data stay on the device. The official conference homepage and presentation pages open in the system browser after a tap.
         </div>
 
         <h2>3. Information stored on the device</h2>
@@ -245,18 +245,13 @@
         <p>The application does not create an attendee account and does not process conference registration or payment.</p>
 
         <h2>5. Conference program and people directory</h2>
-        <p>The application includes conference content supplied or approved by the organizer, including session titles, rooms, times, presentation titles, official report links, and the names, affiliations, roles, and academic titles of speakers and conveners.</p>
+        <p>The application includes conference content supplied or approved by the organizer, including session titles, rooms, times, presentation titles, and the names, affiliations, roles, and academic titles of speakers and conveners.</p>
         <p>This directory is part of the official conference program. It is not created from the device, attendance history, location, or behavior of the person using the application. The application does not monitor who views a directory entry.</p>
         <p>Requests concerning the accuracy, correction, or removal of a directory entry should be sent to <a href="mailto:xmas@xmu.edu.cn">xmas@xmu.edu.cn</a>.</p>
 
         <h2>6. Network behavior</h2>
-        <h3>iOS and Android</h3>
-        <p>The iOS and Android editions read conference content from the installation package. The Android APK does not request Internet permission and does not automatically contact a conference server.</p>
-        <h3>HarmonyOS</h3>
-        <p>The HarmonyOS edition declares <code>ohos.permission.INTERNET</code> because its ArkWeb container uses a controlled HTTPS-style local origin to render files packaged inside the application. The application intercepts those requests and serves only an explicit allowlist of bundled HTML, JavaScript, CSS, JSON, and image files. Unknown requests, redirects, subframe requests, non-user-initiated navigation, and non-GET requests are blocked.</p>
-        <p>This permission does not authorize the application to retrieve conference programs or attendee data from a remote server.</p>
-        <h3>External links</h3>
-        <p>Official report pages, the conference website, DOI destinations, and the feedback email address open only after the user selects them. The operating system then opens a browser or email application, which is governed by that provider's own privacy policy and network settings.</p>
+        <p>All three editions read conference content from the installation package. Android and HarmonyOS do not request Internet permission, and their embedded web engines block network loading. The system browser handles the official conference links after a tap. The app displays contact details as text.</p>
+        <p>When the user opens an official conference page, that website is controlled by the conference organizer and may receive standard network information such as the device IP address under its own privacy practices. The app does not load or monitor that page.</p>
 
         <h2>7. Device permissions and platform features</h2>
         <h3>Notifications</h3>
@@ -312,7 +307,7 @@
         <h2>二、概要</h2>
         <div class="summary">
           <strong>无需账号，不含广告、行为分析或追踪，不向发布者传输 App 内的个人数据。</strong>
-          会议议程、地图、公告和官网报告链接均随安装包提供。个人日程和偏好数据保存在设备本地。只有用户主动选择外部链接时，系统才会打开网站或邮件应用。
+          会议议程、报告信息、地图和公告均随安装包提供。个人日程和偏好数据保存在设备本地。用户点击大会官网或对应报告链接后，由系统浏览器打开。
         </div>
 
         <h2>三、仅保存在设备本地的信息</h2>
@@ -346,18 +341,13 @@
         <p>App 不创建参会者账号，也不处理会议注册或付款。</p>
 
         <h2>五、会议议程与人员目录</h2>
-        <p>App 包含由大会组委会提供或批准的内容，包括场次名称、会议室、时间、报告名称、官网报告链接，以及报告人和召集人的姓名、单位、角色与学术职称。</p>
+        <p>App 包含由大会组委会提供或批准的内容，包括场次名称、会议室、时间、报告名称，以及报告人和召集人的姓名、单位、角色与学术职称。</p>
         <p>人员目录属于官方会议议程的一部分，并非根据使用者的设备、签到记录、位置或行为生成。App 不会监测谁查看了某个目录条目。</p>
         <p>如需核对、更正或删除人员目录信息，请联系组委会：<a href="mailto:xmas@xmu.edu.cn">xmas@xmu.edu.cn</a>。</p>
 
         <h2>六、联网行为</h2>
-        <h3>iOS 与 Android</h3>
-        <p>iOS 和 Android 版本从安装包中读取会议内容。Android APK 不申请联网权限，也不会自动连接会议服务器。</p>
-        <h3>HarmonyOS</h3>
-        <p>HarmonyOS 版本声明 <code>ohos.permission.INTERNET</code>，原因是 ArkWeb 容器使用受控的 HTTPS 风格本地来源加载安装包内的文件。App 会拦截相关请求，并且只返回明确列入白名单的 HTML、JavaScript、CSS、JSON 和图片资源。未知请求、重定向、子框架请求、非用户主动导航和非 GET 请求均会被阻止。</p>
-        <p>该权限不允许 App 从远程服务器获取会议议程或参会者数据。</p>
-        <h3>外部链接</h3>
-        <p>官网报告页、大会官网、DOI 地址及反馈邮箱只有在用户主动选择后才会打开。随后由系统浏览器或邮件应用处理，相应第三方服务受其自身隐私政策和网络设置约束。</p>
+        <p>三个平台均从安装包读取会议内容。Android 和 HarmonyOS 不申请联网权限，内置网页引擎禁止网络加载。官网链接仅在用户点击后交给系统浏览器。联系方式以文本显示。</p>
+        <p>用户打开大会官网页面后，该网站由大会组委会控制，可能依据其自身隐私规则接收设备 IP 地址等常规网络信息。App 不加载或监测该页面。</p>
 
         <h2>七、设备权限与平台功能</h2>
         <h3>通知</h3>
@@ -399,7 +389,7 @@
     </main>
 
     <footer>
-      <p><strong>XMAS 2027 App Privacy Policy</strong> · Policy version 1.0 · Effective 25 November 2026</p>
+      <p><strong>XMAS 2027 App Privacy Policy</strong> · Policy version 1.1 · Effective 25 November 2026</p>
       <p>This standalone policy is separate from the conference registration and payment policy.</p>
     </footer>
   </div>
