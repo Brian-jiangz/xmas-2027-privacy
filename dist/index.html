@@ -255,7 +255,7 @@
 
         <h2>7. Device permissions and platform features</h2>
         <h3>Notifications</h3>
-        <p>The iOS edition may request notification permission when the user enables optional session reminders. Reminders are scheduled locally on the device. The application does not register for remote push notifications.</p>
+        <p>The iOS and Android editions may request notification permission when the user enables optional session reminders. HarmonyOS uses the system <code>PUBLISH_AGENT_REMINDER</code> capability to schedule the same local reminder after the user enables it. Reminders are scheduled locally on the device. The application does not register for remote push notifications and does not send a device or push token.</p>
         <h3>Calendar and Reminders</h3>
         <p>The iOS edition may request Calendar or Reminders access when the user enables those optional features. The application uses on-device containers and does not upload calendar or reminder data. Users can deny these permissions and continue using the bundled program.</p>
         <h3>Location, contacts, camera, and microphone</h3>
@@ -351,7 +351,7 @@
 
         <h2>七、设备权限与平台功能</h2>
         <h3>通知</h3>
-        <p>iOS 版本可能在用户启用可选场次提醒时申请通知权限。提醒仅在设备本地安排。App 不注册远程推送通知。</p>
+        <p>iOS 和 Android 版本可能在用户启用可选场次提醒时申请通知权限；HarmonyOS 版本在用户启用后使用系统 <code>PUBLISH_AGENT_REMINDER</code> 能力安排本地提醒。提醒仅在设备本地安排。App 不注册远程推送通知，也不发送设备标识或推送令牌。</p>
         <h3>日历与提醒事项</h3>
         <p>iOS 版本可能在用户启用相应可选功能时申请日历或提醒事项权限。App 仅使用设备本地的容器，不上传日历或提醒事项数据。用户可以拒绝授权，并继续使用随包会议内容。</p>
         <h3>定位、通讯录、相机与麦克风</h3>
