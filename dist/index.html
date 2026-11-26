@@ -182,7 +182,7 @@
       <h1>XMAS-MEL App Privacy Policy</h1>
       <dl class="meta">
         <div><dt>Effective</dt><dd>26 November 2026</dd></div>
-        <div><dt>Policy version</dt><dd>1.4</dd></div>
+        <div><dt>Policy version</dt><dd>1.5</dd></div>
         <div><dt>Applies to</dt><dd>iOS, Android and HarmonyOS 1.1.6+</dd></div>
       </dl>
     </header>
@@ -256,9 +256,9 @@
         <p>When the user opens an official conference page, that website is controlled by the conference organizer and may receive standard network information such as the device IP address under its own privacy practices. The app does not load or monitor that page.</p>
         <h2>7. Device permissions and platform features</h2>
         <h3>Notifications</h3>
-        <p>The iOS and Android editions may request notification permission when the user enables optional session reminders. HarmonyOS uses the system <code>PUBLISH_AGENT_REMINDER</code> capability to schedule the same local reminder after the user enables it. Reminders are scheduled locally on the device. The application does not register for remote push notifications and does not send a device or push token.</p>
+        <p>On iOS, the application requests notification permission during the first-entry setup so local session reminders can be scheduled. Android may request the same permission when reminders are enabled. HarmonyOS uses the system <code>PUBLISH_AGENT_REMINDER</code> capability to schedule local reminders. Reminders are created locally on the device. The application does not register for remote push notifications and does not send a device or push token.</p>
         <h3>Calendar and Reminders</h3>
-        <p>The iOS edition may request Calendar or Reminders access when the user enables those optional features. The application uses on-device containers and does not upload calendar or reminder data. Users can deny these permissions and continue using the bundled program.</p>
+        <p>On iOS, the same first-entry setup requests full Calendar and Reminders access so saved sessions and personal agenda items can be synchronized both ways with the app's on-device XMAS Schedule calendar and XMAS Reminders list. The application does not upload calendar or reminder data. Users can deny either permission and continue using the bundled program and app-local schedule.</p>
         <h3>Location, contacts, camera, and microphone</h3>
         <p>The application does not request access to location, device contacts, the camera, or the microphone.</p>
 
@@ -353,9 +353,9 @@
         <p>用户打开大会官网页面后，该网站由大会组委会控制，可能依据其自身隐私规则接收设备 IP 地址等常规网络信息。App 不加载或监测该页面。</p>
         <h2>七、设备权限与平台功能</h2>
         <h3>通知</h3>
-        <p>iOS 和 Android 版本可能在用户启用可选场次提醒时申请通知权限；HarmonyOS 版本在用户启用后使用系统 <code>PUBLISH_AGENT_REMINDER</code> 能力安排本地提醒。提醒仅在设备本地安排。App 不注册远程推送通知，也不发送设备标识或推送令牌。</p>
+        <p>iOS 版本会在首次进入 App 时申请通知权限，以便安排本地场次提醒；Android 版本可能在用户启用提醒时申请同一权限；HarmonyOS 版本使用系统 <code>PUBLISH_AGENT_REMINDER</code> 能力安排本地提醒。提醒仅在设备本地安排。App 不注册远程推送通知，也不发送设备标识或推送令牌。</p>
         <h3>日历与提醒事项</h3>
-        <p>iOS 版本可能在用户启用相应可选功能时申请日历或提醒事项权限。App 仅使用设备本地的容器，不上传日历或提醒事项数据。用户可以拒绝授权，并继续使用随包会议内容。</p>
+        <p>iOS 版本会在同一首次进入流程中申请日历和提醒事项的完全访问权限，以便将收藏场次及个人日程与 App 本机的 XMAS Schedule 日历和 XMAS Reminders 提醒列表进行双向同步。App 不上传日历或提醒事项数据。用户可以拒绝任一权限，并继续使用随包会议内容和 App 本地日程。</p>
         <h3>定位、通讯录、相机与麦克风</h3>
         <p>App 不申请定位、设备通讯录、相机或麦克风权限。</p>
 
@@ -391,7 +391,7 @@
     </main>
 
     <footer>
-      <p><strong>XMAS-MEL App Privacy Policy</strong> · Policy version 1.4 · Effective 26 November 2026</p>
+      <p><strong>XMAS-MEL App Privacy Policy</strong> · Policy version 1.5 · Effective 26 November 2026</p>
       <p>This standalone policy is separate from the conference registration and payment policy.</p>
     </footer>
   </div>
