@@ -1,4 +1,4 @@
-# XMAS 2027 App Privacy Policy
+# XMAS-MEL App Privacy Policy
 
 Public privacy policy for the XMAS 2027 mobile conference application.
 
